@@ -170,11 +170,11 @@
 
         switch (e.target.value) {
           case 'hls':
-            tv.setAttribute('src', `https://${SUBDOMAIN}/${INPUT_ID}/iframe?cmcd=true`);
+            tv.setAttribute('src', `https://${SUBDOMAIN}/${INPUT_ID}/iframe?cmcd=true&autoplay=true&muted=true`);
             break;
           case 'llhls':
             // Remember that note above about not looking at this code too closely?
-            tv.setAttribute('src', `https://${SUBDOMAIN}/${INPUT_ID}/iframe?cmcd=true&force-flavor=llhls&maxLiveSyncPlaybackRate=1.1`);
+            tv.setAttribute('src', `https://${SUBDOMAIN}/${INPUT_ID}/iframe?cmcd=true&force-flavor=llhls&maxLiveSyncPlaybackRate=1.1&autoplay=true&muted=true`);
             break;
           default:
             tv.setAttribute('src', `placeholder.html`);
